@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colares</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="img/logo fundo png.png" width="150px" alt="logo">
+                </div>
+                <button class="menu-button" onclick="toggleMenu()">☰</button>
+                <nav>
+                    <ul>
+                        <li><a href="pagina inicial.html" data-translate="main_page">Página Principal</a></li>
+                        <li class="drop"><a href="#" tabindex="1" data-translate="products">Produtos</a>
+                            <div class="dropdown">
+                                <a href="aneis.html" tabindex="2" data-translate="rings">Anéis</a>
+                                <a href="brincos.html" tabindex="3" data-translate="earrings">Brincos</a>
+                                <a href="colares.html" tabindex="4" data-translate="necklaces">Colares</a>
+                                <a href="pulseiras.html" tabindex="5" data-translate="bracelets">Pulseiras</a>
+                                <a href="pingentes.html" tabindex="6" data-translate="pendants">Pingentes</a>
+                            </div>
+                        </li>
+                        <li><a href="quem_somos.html" tabindex="7" data-translate="about_us">Quem Somos</a></li>
+                    </ul>
+                </nav>
+                <div class="botao1">
+                    <a class="tr" onclick="setLanguage('en')">English</a>
+                </div>
+                <div class="botao1">
+                <a class="tr" onclick="setLanguage('pt')">Português</a>
+                </div>
+                <div class="cart">
+                    <a href="carrinho.html"><img src="img/icons8-sacola-de-compras-25.png" width="40px" alt="cart icon"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <center>
+        <div class="produtos">      
+            <div class="out">
+                <img src="img/choker-sept-ouro-amarelo-600x600.jpg" alt="Colar Ciranda">
+                <div class="in">
+                    <a href="colar1.html">
+                        <img src="img/choker-sept-joias-liê-2-600x600.jpg" alt="Colar Ciranda"></a>
+                </div>
+            </div>
+            <h2 id="nome"><a href="colar1.html" data-translate="necklace1">Colar Ciranda</a></h2>
+            <p id="preco" data-translate="priceneck1">R$3.090,00</p>
+
+            <div class="out">
+                <img src="img/colar-estrela-2-ouro-amarelo-600x600.jpg" alt="Colar Estrela">
+                <div class="in">
+                    <a href="colar2.html">
+                        <img src="img/colar-estrela-2-3-600x600.jpg" alt="Colar Estrela"></a>
+                </div>
+            </div>
+            <h2 id="nome"><a href="colar2.html" data-translate="necklace2">Colar Estrela</a></h2>
+            <p id="preco" data-translate="priceneck2">R$2.390,00</p>
+
+            <div class="out">
+                <img src="img/colar-petit-ouro-amarelo-600x600.jpg" alt="Colar Gota">
+                <div class="in">
+                    <a href="colar3.html">
+                        <img src="img/colar-petit-ouro-2-600x600.jpg" alt="Colar Gota"></a>
+                </div>
+            </div>
+            <h2 id="nome"><a href="colar3.html" data-translate="necklace3">Colar Gota</a></h2>
+            <p id="preco" data-translate="priceneck3">R$2.890,00</p>
+        </div> 
+    </center>
+</main>
+
+
+<script src="translations.js"></script>
+<script src="menu.js" defer></script> 
+</body>
+</html>

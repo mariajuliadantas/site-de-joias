@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="img/logo fundo png.png" width="150px" alt="logo">
+                </div>
+                <button class="menu-button" onclick="toggleMenu()">☰</button> <!-- Botão de menu responsivo -->
+                <nav>
+                    <ul>
+                        <li><a href="pagina inicial.html" data-translate="main_page">Página Principal</a></li>
+                        <li class="drop"><a href="" tabindex="1" data-translate="products">Produtos</a>
+                            <div class="dropdown">
+                                <a href="aneis.html" tabindex="2" data-translate="rings">Anéis</a>
+                                <a href="brincos.html" tabindex="3" data-translate="earrings">Brincos</a>
+                                <a href="colares.html" tabindex="4" data-translate="necklaces">Colares</a>
+                                <a href="pulseiras.html" tabindex="5" data-translate="bracelets">Pulseiras</a>
+                                <a href="pingentes.html" tabindex="6" data-translate="pendants">Pingentes</a>
+                            </div>
+                        </li>
+                        <li><a href="quem somos.html" tabindex="7" data-translate="about_us">Quem Somos</a></li>
+                    </ul>
+                </nav>
+                <div class="botao1">
+                    <a class="tr" onclick="setLanguage('en')">English</a>
+                </div>
+                <div class="botao1">
+                    <a class="tr" onclick="setLanguage('pt')">Português</a>
+                </div>
+                <div class="cart">
+                    <a href="carrinho.html"><img src="img/icons8-sacola-de-compras-25.png" width="40px" alt="carrinho"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1 data-translate="welcome">Uma joia<br>para cada ocasião</h1>
+                    <p data-translate="unique_pieces">Peças únicas, feitas à mão.</p>
+                    <a href="quem somos.html" tabindex="7" class="botao" data-translate="learn_more">Saiba mais &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="img/10334490.png" width="350px" alt="imagem joia">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- categorias -->
+<nav>
+    <div class="catgorias">
+        <div class="image">
+            <img src="img/anel-estrela-cadente-2-600x600.jpg" class="um" alt="anéis">
+            <div class="box">
+                <a href="aneis.html" tabindex="8"><h4 data-translate="rings">Anéis</h4></a>
+            </div>
+        </div>
+        <div class="image">
+            <img src="img/argolinhas-com-diamantes-2-600x600.jpg" class="um" alt="brincos">
+            <div class="box">
+                <a href="brincos.html" tabindex="9"><h4 data-translate="earrings">Brincos</h4></a>
+            </div>
+        </div>
+        <div class="image">
+            <img src="img/pulseira-estrela-2-1-600x600.jpg" class="um" alt="pulseiras">
+            <div class="box">
+                <a href="pulseiras.html" tabindex="10"><h4 data-translate="bracelets">Pulseiras</h4></a>
+            </div>
+        </div>
+        <div class="image">
+            <img src="img/choker-sept-joias-liê-2-600x600.jpg" class="um" alt="colares">
+            <div class="box">
+                <a href="colares.html" tabindex="11"><h4 data-translate="necklaces">Colares</h4></a>
+            </div>
+        </div>
+        <div class="image">
+            <img src="img/relicario-amor-5-600x600.jpg" class="um" alt="pingentes">
+            <div class="box">
+                <a href="pingentes.html" tabindex="12"><h4 data-translate="pendants">Pingentes</h4></a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<script src="translations.js"></script>
+<script src="menu.js" defer></script> 
+</body>
+</html>

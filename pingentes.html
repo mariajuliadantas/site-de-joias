@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pingentes</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="img/logo fundo png.png" width="150px" alt="logo">
+                </div>
+                <button class="menu-button" onclick="toggleMenu()">☰</button>
+                <nav>
+                    <ul>
+                        <li><a href="pagina inicial.html" data-translate="main_page">Página Principal</a></li>
+                        <li class="drop"><a href="#" tabindex="1" data-translate="products">Produtos</a>
+                            <div class="dropdown">
+                                <a href="aneis.html" tabindex="2" data-translate="rings">Anéis</a>
+                                <a href="brincos.html" tabindex="3" data-translate="earrings">Brincos</a>
+                                <a href="colares.html" tabindex="4" data-translate="necklaces">Colares</a>
+                                <a href="pulseiras.html" tabindex="5" data-translate="bracelets">Pulseiras</a>
+                                <a href="pingentes.html" tabindex="6" data-translate="pendants">Pingentes</a>
+                            </div>
+                        </li>
+                        <li><a href="quem_somos.html" tabindex="7" data-translate="about_us">Quem Somos</a></li>
+                    </ul>
+                </nav>
+                <div class="botao1">
+                    <a class="tr" onclick="setLanguage('en')">English</a>
+                </div>
+                <div class="botao1">
+                <a class="tr" onclick="setLanguage('pt')">Português</a>
+                </div>
+                <div class="cart">
+                    <a href="carrinho.html"><img src="img/icons8-sacola-de-compras-25.png" width="40px" alt="cart icon"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <center>
+        <div class="produtos">
+            <div class="out">
+                <img src="img/relicario-amor-safira-verde-600x600.png" alt="Relição">
+                <div class="in">
+                    <a href="pingente1.html">
+                        <img src="img/relicario-amor-5-600x600.jpg" alt="Relição"></a>
+                </div>
+            </div>
+            <h2 id="nome"><a href="pingente1.html" data-translate="pendant1">Pingente Relição</a></h2>
+            <p id="preco" data-translate="pricependant1">R$1.090,00</p>
+
+            <div class="out">
+                <img src="img/pingente-estrela-5-ouro-amarelo-600x600.jpg" alt="Estrela">
+                <div class="in">
+                    <a href="pingente2.html">
+                        <img src="img/pingente-estrela-5-2-600x600.jpg" alt="Estrela"></a>
+                </div>
+            </div>
+            <h2 id="nome"><a href="pingente2.html" data-translate="pendant2">Pingente Estrela</a></h2>
+            <p id="preco" data-translate="pricependant2">R$890,00</p>
+
+            <div class="out">
+                <img src="img/pingente-letra-a-ouro-amarelo.jpg" alt="Letra">
+                <div class="in">
+                    <a href="pingente3.html">
+                        <img src="img/pingente-letra-ouro-6-600x600.jpg" alt="Letra"></a>
+                </div>
+            </div>
+            <h2 id="nome"><a href="pingente3.html" data-translate="pendant3">Pingente Letra</a></h2>
+            <p id="preco" data-translate="pricependant3">R$690,00</p>
+        </div>
+    </center>
+</main>
+
+<script src="translations.js"></script>
+<script src="menu.js" defer></script> 
+</body>
+</html>

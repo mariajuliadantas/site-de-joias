@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brincos</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="img/logo fundo png.png" width="150px" alt="logo">
+                </div>
+                <button class="menu-button" onclick="toggleMenu()">☰</button>
+                <nav>
+                    <ul>
+                        <li><a href="pagina inicial.html" data-translate="main_page">Página Principal</a></li>
+                        <li class="drop"><a href="#" tabindex="1" data-translate="products">Produtos</a>
+                            <div class="dropdown">
+                                <a href="aneis.html" tabindex="2" data-translate="rings">Anéis</a>
+                                <a href="brincos.html" tabindex="3" data-translate="earrings">Brincos</a>
+                                <a href="colares.html" tabindex="4" data-translate="necklaces">Colares</a>
+                                <a href="pulseiras.html" tabindex="5" data-translate="bracelets">Pulseiras</a>
+                                <a href="pingentes.html" tabindex="6" data-translate="pendants">Pingentes</a>
+                            </div>
+                        </li>
+                        <li><a href="quem somos.html" tabindex="7" data-translate="about_us">Quem Somos</a></li>
+                    </ul>
+                </nav>
+                <div class="botao1">
+                    <a class="tr" onclick="setLanguage('en')">English</a>
+                </div>
+                <div class="botao1">
+                <a class="tr" onclick="setLanguage('pt')">Português</a>
+                </div>
+                <div class="cart">
+                    <a href="carrinho.html" ><img src="img/icons8-sacola-de-compras-25.png" width="40px"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+    <center>
+        <div class="produtos">      
+            <div class="out">
+                <img src="img/brinco-juli-ouro-amarelo-600x600.jpg" alt="Brinco Juli">
+                <div class="in">
+                    <a href="brinco1.html">
+                        <img src="img/brinco-juli-600x600.jpg" alt="Brinco Juli">
+                    </a>
+                </div>
+            </div>
+            <h2 id="nome"><a href="brinco1.html" data-translate="earring1">Brinco Juli</a></h2>
+            <p id="preco" data-translate="pricee1">R$1.890,00</p>
+
+            <div class="out">
+                <img src="img/argolinha-mini-com-diamantes-ouro-amarelo-600x600.jpg" alt="Argola Sara">
+                <div class="in">
+                    <a href="brinco2.html">
+                        <img src="img/argolinhas-com-diamantes-2-600x600.jpg" alt="Argola Sara">
+                    </a>
+                </div>
+            </div>
+            <h2 id="nome"><a href="brinco2.html" data-translate="earring2">Argola Sara</a></h2>
+            <p id="preco" data-translate="pricee2">R$2.690,00</p>
+
+            <div class="out">
+                <img src="img/brinco-simple-com-diamantes-oouro-amarelo-600x600.jpg" alt="Brinco Mila">
+                <div class="in">
+                    <a href="brinco3.html">
+                        <img src="img/brinco-simple-com-diamante-600x600.jpg" alt="Brinco Mila">
+                    </a>
+                </div>
+            </div>
+            <h2 id="nome"><a href="brinco3.html" data-translate="earring3">Brinco Mila</a></h2>
+            <p id="preco" data-translate="pricee3">R$1.290,00</p>
+        </div>
+    </center>
+    
+
+    <script src="translations.js"></script>
+    <script src="menu.js" defer></script> 
+</body>
+</html>
